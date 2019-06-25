@@ -14,5 +14,10 @@
 * Magnetic contact![Contact](https://www.alpro.co.uk/Uploads/ShopItems/00/00/00/69/ShopItemImg1_PICT/Electromagnet_tny.jpg)
 * 2 buttons to rotate sides![Pushbutton](https://tshop.r10s.com/684/0f3/c390/4f3d/8062/ca01/e6ae/1117e7b222c4544488dd21.jpg?_ex=128x128)
 * 2 10k resistors (if not pullup connection of inputs)![Resistors](https://opencircuit.shop/resources/content/34eaaab5ea018/crop/128-128/Weerstanden.jpg)
+
+# Scheme
+![Geoguessr](https://i.imgur.com/B2zxhYZ.png)
+
+# Screens from StreetView (Geoguessr, Gmaps)
 ![Geoguessr](http://jeffreyhill.typepad.com/.a/6a00d8341d417153ef01b8d17af746970c-800wi)
 ![Gmaps](https://cnet2.cbsistatic.com/img/kv9UIOvPztuH3XcIO3FQ9yBNJhI=/936x527/2018/05/24/30695bcc-0173-4903-bb0c-44860fb26099/screen-shot-2018-05-24-at-11-09-45-am.png)
