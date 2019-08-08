@@ -18,6 +18,6 @@
 # Scheme
 ![Geoguessr](https://i.imgur.com/B2zxhYZ.png)
 
-# Screens from StreetView (Geoguessr, Gmaps)
+# Screens from StreetView (Geoguessr, Earthpicker, Gmaps)
 ![Geoguessr](http://jeffreyhill.typepad.com/.a/6a00d8341d417153ef01b8d17af746970c-800wi)
 ![Gmaps](https://cnet2.cbsistatic.com/img/kv9UIOvPztuH3XcIO3FQ9yBNJhI=/936x527/2018/05/24/30695bcc-0173-4903-bb0c-44860fb26099/screen-shot-2018-05-24-at-11-09-45-am.png)
