@@ -70,7 +70,25 @@
 </div>				
 <hr><center><h3>Projekt Bicyklovanie po Google Mapách</h3></center><hr>
 <p style="text-align: justify;">
-	</p>
+Bicyklovanie je veľmi obľúbený šport, aj vďaka úspešnému športovcovi Petrovi Saganovi. 
+Vášniví cyklisti brázdia naše cesty a chodníky. 
+Nakoľko ale počasie vždy nepraje, nejeden fanúšik bicykla by uvítal bicyklovať z pohodlia domova. 
+Jedným zo spôsobov je využitie projektu Bicyklovanie po Google mapách. 
+Projekt umožňuje využitie vášho rotopédu, bicykla ako interakčného prostriedku pre pohyb po Google mapách bez nutnosti invazívnych úprav.
+Hlavným prvkom systému je použitie vývojovej dosky Arduino (Leonardo, alebo Pro Micro) s AtMega32u4 procesorom. 
+Tento typ procesora dokáže emulovať klávesnicu a myš ako HID kontróler (Human Interface device).
+Arduino načítava aj stav digitálneho vstupu, kde je pripojený magnetický kontakt. 
+Spojením magnetického kontaktu získa Arduino logickú úroveň, ktorou deteguje otočenie pedálov o jednu otáčku.
+Následne inkrementuje počítadlo a pri určitej hodnote (pretečení) - 3 pre rýchly pohyb, alebo 5 pre pomalý pohyb odošle po počítača znak.
+Ak je na predmetnom počítači otvorený Google Maps v Street View móde vykoná sa pohyb vpred na mape.
+Súčasťou systému sú aj smerové tlačidlá, ktorými je možné otáčanie po dobu ich držania cyklistom. 
+Základná programová implementácia využíva INPUT_PULLUP zapojenie tlačidiel, kedy je tlačidlo spínané proti zemi.
+Bicyklovanie je možné obohatiť aj o využitie VR headsetu.
+Okrem Google Maps využíva Street View aj niekoľko ďalších zaujímavých webaplikácii, ktoré je možné vyskúšať. 
+Sú to predovšetkým zaujímavé hádacie stránky, kde je možné hádať neznáme miesto na svete: GeoGuessr, Earth Picker a iné...
+Všetky periférie je možné na bicykel osadiť s využitím sťahovacích pások. 
+Arduino s 32u4 procesorom je možné využiť aj na ďalšie zaujímavé projekty v štýle: Volant, pedále k hre s analógovou podporou s pomerne dobrým rozlíšením, ručná brzda, ovládacie panely k simulátorom a hrám.
+</p>
 <hr><center><h4>Screenshoty z Bicyklovania po Google maps, GeoGuessr</h4></center></hr>
 <center>
 <img src="https://www.techadvisor.com/cmsdata/features/113719/funny-things-on-google-street-view-iceland.png" style="display: block; max-width: 100%; height: auto;" alt="Google Maps - najlepšie zábery" title="Google Maps - najlepšie zábery">
