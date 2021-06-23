@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="sk-SK">
+<head>	
+	<!-- Primary Meta Tags -->
+	<title>Monitor teplôt, vlhkostí v domácnosti - Arduino + Ethernet Wiznet W5100. OneWire Dallas DS18B20 a I2C senzory BME280, SHT21, DHT22.</title>
+	<meta name="title" content="Monitor teplôt, vlhkostí v domácnosti - Arduino + Ethernet Wiznet W5100. OneWire Dallas DS18B20 a I2C senzory BME280, SHT21, DHT22.">
+	<meta name="description" content="Softvér pre monitorovanie teplôt, vlhkostí v domácnosti s možnosťou ovládania ventilov (solenoidov) radiátorov s vizualizáciou do webového rozhrania. Mikrokontróler Arduino Mega + Ethernet Wiznet W5100">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://martinius96.github.io/Monitor-teploty-vlhkosti-kurenie/">
+	<meta property="og:title" content="Monitor teplôt, vlhkostí v domácnosti - Arduino + Ethernet Wiznet W5100. OneWire Dallas DS18B20 a I2C senzory BME280, SHT21, DHT22.">
+	<meta property="og:description" content="Softvér pre monitorovanie teplôt, vlhkostí v domácnosti s možnosťou ovládania ventilov (solenoidov) radiátorov s vizualizáciou do webového rozhrania. Mikrokontróler Arduino Mega + Ethernet Wiznet W5100">
+	<meta property="og:image" content="">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://martinius96.github.io/Monitor-teploty-vlhkosti-kurenie/">
+	<meta property="twitter:title" content="Monitor teplôt, vlhkostí v domácnosti - Arduino + Ethernet Wiznet W5100. OneWire Dallas DS18B20 a I2C senzory BME280, SHT21, DHT22.">
+	<meta property="twitter:description" content="Softvér pre monitorovanie teplôt, vlhkostí v domácnosti s možnosťou ovládania ventilov (solenoidov) radiátorov s vizualizáciou do webového rozhrania. Mikrokontróler Arduino Mega + Ethernet Wiznet W5100">
+	<meta property="twitter:image" content="">
+	<meta name="robots" content="index, follow">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+	<meta name="google-site-verification" content="UwZZh2EXv3iWUAi_1Z0hLxVCz6ySJ4UdY_BPoLtejwo" />    	
+	<meta property='fb:admins' content='100001242570317'>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    		window.smartlook||(function(d) {
+    			var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    			var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    			c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    		})(document);
+    		smartlook('init', 'db50efe9fff280a17db52b82be221240cbbd3dbe');
+	</script>    
+</head>
+<body>
+	<div class="container">
+  		<div class="row">
+<div class="col-sm-12">
+<div class="alert alert-success">
+	<strong>Projekt k repozitáru - Github: </strong><a href="https://github.com/martinius96/Monitor-teploty-vlhkosti-kurenie/">Monitor teplôt vlhkostí</a>
+</div>	
+<div class='alert alert-danger'>
+	Pri záujme o vyskúšanie webového rozhrania s vašim hardvérom kontaktovať na: <strong>martinius96@gmail.com</strong>
+</div>			
+<span class="label label-default">Arduino</span>
+<span class="label label-primary">AtMega32u4</span>
+<span class="label label-success">Leonardo</span>
+<span class="label label-info">Pro Micro</span>
+<span class="label label-warning">Bicyklovanie</span>
+<span class="label label-danger">Google</span>
+<span class="label label-default">Maps</span>
+<span class="label label-primary">GeoGuessr</span>
+<hr><center><h3>Hardvér pre projekt Bicyklovanie - Riadiaci mikrokontróler</h3></center><hr>
+<div class="row">
+  <div class="col-sm-6"><center><img src="https://i.imgur.com/eSPvB6Y.png" width="128px" height="128px" style="border-radius: 50%;" alt="Riadiaci mikrokontróler Arduino Leonardo" title="Riadiaci mikrokontróler Arduino Leonardo"><br><b>Arduino Leonardo</b></center></div>
+  <div class="col-sm-6"><center><img src="https://i.imgur.com/frKN6rc.png" width="128px" height="128px" style="border-radius: 50%;" alt="Riadiaci mikrokontróler Arduino Pro Micro" title="Riadiaci mikrokontróler Arduino Pro Micro"><br><b>Arduino Pro Micro</b></center></div>
+</div>	
+<hr><center><h3>Periférie k projektu Bicyklovanie</h3></center><hr>
+<div class="row">
+  <div class="col-sm-2"><center><img src="https://i.imgur.com/qFy3gnB.png" width="128px" height="128px" style="border-radius: 50%;" alt="Teplotný senzor DS18B20 v puzdre TO-92" title="Teplotný senzor DS18B20 v puzdre TO-92"><br><b>DS18B20 - TO-92</b></center></div>
+  <div class="col-sm-2"><center><img src="https://i.imgur.com/FNWTjFE.png" width="128px" height="128px" style="border-radius: 50%;" alt="Teplotný senzor DS18B20 - vodotesné vyhotovenie" title="Teplotný senzor DS18B20 - vodotesné vyhotovenie"><br><b>DS18B20 - vodotesný</b></center></div>
+</div>		
+<hr><center><h4>Príklady elektromagnetických ventilov - solenoidov pre radiátor</h4></center></hr>
+<div class="row">
+  <div class="col-sm-6"><center><img src="https://i.imgur.com/tsudmXs.png" width="256px" height="256px" style="border-radius: 50%;" alt="Elektromagnetický solenoidový ventil Danfoss - Arduino + Ethernet - monitor - teplota - kúrenie" title="Elektromagnetický solenoidový ventil Danfoss - Arduino + Ethernet - monitor - teplota - kúrenie"><br><b>Danfoss EV225B DN 20</b></center></div>
+  <div class="col-sm-6"><center><img src="https://i.imgur.com/AjFRzz5.png" width="256px" height="256px" style="border-radius: 50%;" alt="Elektromagnetický solenoidový ventil TORK - Arduino + Ethernet - monitor - teplota - kúrenie" title="Elektromagnetický solenoidový ventil TORK - Arduino + Ethernet - monitor - teplota - kúrenie"><br><b>TORK T-GZN104 DN 20</b></center></div>
+</div>			
+<hr><center><h3>Projekt Bicyklovanie po Google Mapách</h3></center><hr>
+<p style="text-align: justify;">
+
+<center><img src="https://i.imgur.com/IDW7XSe.png" style="display: block; max-width: 100%; height: auto;" alt="Kotolňa - schéma zapojenia OneWire zberníc - Arduino Mega2560 + Ethernet" title="Kotolňa - schéma zapojenia OneWire zberníc - Arduino Mega2560 + Ethernet"></center>	
+<hr><center><h4>Screenshoty webového rozhrania - Monitor teploty, vlasti v domácnosti - Arduino + Ethernet</h4></center></hr>
+<center>
+<img src="https://i.imgur.com/10J3anU.jpg" style="display: block; max-width: 100%; height: auto;" alt="Monitor domácnosti - Arduino - Prihlásenie používateľa" title="Monitor domácnosti - Arduino - Prihlásenie používateľa">
+<img src="https://i.imgur.com/p9fl1Az.png" style="display: block; max-width: 100%; height: auto;" alt="Monitor domácnosti - Arduino - Vizualizácia dát o teplote, vlhkosti v reálnom čase" title="Monitor domácnosti - Arduino - Vizualizácia dát o teplote, vlhkosti v reálnom čase">
+<img src="https://i.imgur.com/W8ur0sd.png" style="display: block; max-width: 100%; height: auto;" alt="Čiarový graf - dáta o teplote z I2C zbernice, senzorov DHT22, SHT21, BME280" title="Čiarový graf - dáta o teplote z I2C zbernice, senzorov DHT22, SHT21, BME280">
+<img src="https://i.imgur.com/NABQv0B.png" style="display: block; max-width: 100%; height: auto;" alt="Čiarový graf - vizualizácia dát o teplote - senzory Dallas DS18B20 na OneWire zbernici" title="Čiarový graf - vizualizácia dát o teplote - senzory Dallas DS18B20 na OneWire zbernici">
+<img src="https://i.imgur.com/7qBSORc.png" style="display: block; max-width: 100%; height: auto;" alt="Zmena názvov miestností, kde sú senzory DS18B20, DHT22, SHT21, BME280 umiestnené" title="Zmena názvov miestností, kde sú senzory DS18B20, DHT22, SHT21, BME280 umiestnené">
+<img src="https://i.imgur.com/2DAnL3E.png" style="display: block; max-width: 100%; height: auto;" alt="Výber a ovládanie výstupu v automatickom / manuálnom režime - Modul 2" title="Výber a ovládanie výstupu v automatickom / manuálnom režime - Modul 2">
+</center>
+	
+	</div>
+		</div>
+</div>
+</body>
+</html>
