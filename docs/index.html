@@ -77,7 +77,7 @@ Jedným zo spôsobov je využitie projektu Bicyklovanie po Google mapách.
 Projekt umožňuje využitie vášho rotopédu, bicykla ako interakčného prostriedku pre pohyb po Google mapách bez nutnosti invazívnych úprav.
 Hlavným prvkom systému je použitie vývojovej dosky Arduino (Leonardo, alebo Pro Micro) s AtMega32u4 procesorom. 
 Tento typ procesora dokáže emulovať klávesnicu a myš ako HID kontróler (Human Interface device).
-Arduino načítava aj stav digitálneho vstupu, kde je pripojený magnetický kontakt. 
+Arduino načítava aj stav digitálneho vstupu, kde je pripojený magnetický kontakt (možno nahradiť za optozávoru). 
 Spojením magnetického kontaktu získa Arduino logickú úroveň, ktorou deteguje otočenie pedálov o jednu otáčku.
 Následne inkrementuje počítadlo a pri určitej hodnote (pretečení) - 3 pre rýchly pohyb, alebo 5 pre pomalý pohyb odošle po počítača znak.
 Ak je na predmetnom počítači otvorený Google Maps v Street View móde vykoná sa pohyb vpred na mape.
@@ -89,7 +89,11 @@ Sú to predovšetkým zaujímavé hádacie stránky, kde je možné hádať nezn
 Všetky periférie je možné na bicykel osadiť s využitím sťahovacích pások. 
 Arduino s 32u4 procesorom je možné využiť aj na ďalšie zaujímavé projekty v štýle: Volant, pedále k hre s analógovou podporou s pomerne dobrým rozlíšením, ručná brzda, ovládacie panely k simulátorom a hrám.
 </p>
-<hr><center><h4>Screenshoty z Bicyklovania po Google maps, GeoGuessr</h4></center></hr>
+<hr><center><h4>Schéma zapojenia - Bicyklovanie po Google Maps</h4></center></hr>
+<center>
+<img src="https://i.imgur.com/B2zxhYZ.png" style="display: block; max-width: 100%; height: auto;" alt="Schéma zapojenia - Arduino - Google maps" title="Schéma zapojenia - Arduino - Google maps">
+</center>
+<hr><center><h4>Screenshoty z Bicyklovania po Google Maps, GeoGuessr</h4></center></hr>
 <center>
 <img src="https://www.techadvisor.com/cmsdata/features/113719/funny-things-on-google-street-view-iceland.png" style="display: block; max-width: 100%; height: auto;" alt="Google Maps - najlepšie zábery" title="Google Maps - najlepšie zábery">
 <img src="https://fansided.com/files/2013/05/geo.png" style="display: block; max-width: 100%; height: auto;" alt="Google Maps - GeoGuessr - najlepšie zábery" title="Google Maps - GeoGuessr - najlepšie zábery">
